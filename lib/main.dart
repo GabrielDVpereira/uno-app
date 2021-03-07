@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/screens/auth_screen.dart';
+import 'package:frontend/screens/login_screen.dart';
+import 'package:frontend/screens/signup_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,10 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        accentColor: Color(0xff0473DA),
+        primaryColor: Color(0xffED1B24),
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: AuthScreen(),
+      home: SignUpScreen(),
     );
   }
 }
